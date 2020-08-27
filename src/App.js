@@ -11,6 +11,7 @@ import {
   SafeAreaView,
   StyleSheet,
   ScrollView,
+  Image,
   View,
   Text,
   StatusBar,
@@ -24,6 +25,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import { FormButton, PlusIcon } from "./components";
+
+// import logo from "./assets/img/logo.svg";
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -35,12 +40,12 @@ const App: () => React$Node = () => {
           <Header />
           <View style={styles.app}>
             <View style={styles.header}>
-              <Image
+              {/* <Image
                 accessibilityLabel="React logo"
-                source={logo}
+                // source={logo}
                 resizeMode="contain"
                 style={styles.logo}
-              />
+              /> */}
               <Text style={styles.title}>Welcome to MYLO</Text>
             </View>
 
@@ -102,6 +107,40 @@ const styles = StyleSheet.create({
     padding: 4,
     paddingRight: 12,
     textAlign: 'right',
+  },
+  app: {
+    marginHorizontal: "auto",
+    maxWidth: 500,
+  },
+  logo: {
+    margin: "auto",
+    width: 124,
+    height: 42,
+  },
+  header: {
+    padding: 20,
+  },
+  title: {
+    fontWeight: "bold",
+    fontFamily: "Arial Hebrew Scholar",
+    fontSize: 30,
+    marginTop: 100,
+    marginBottom: 80,
+    marginVertical: "1em",
+    textAlign: "center",
+    color: "#737171",
+  },
+  text: {
+    lineHeight: 20,
+    fontSize: 20,
+    marginVertical: "1em",
+    textAlign: "center",
+  },
+  link: {
+    color: "#1B95E0",
+  },
+  code: {
+    fontFamily: "monospace, monospace",
   },
 });
 
