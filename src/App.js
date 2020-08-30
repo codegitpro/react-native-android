@@ -1,10 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
+
 
 import React from 'react';
 import {
@@ -19,17 +13,14 @@ import {
 
 import {
   Header,
-  LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 import { FormButton, PlusIcon } from "./components";
 
 // import logo from "./assets/img/logo.svg";
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -126,14 +117,14 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginTop: 100,
     marginBottom: 80,
-    marginVertical: "1em",
+    marginVertical: 20,
     textAlign: "center",
     color: "#737171",
   },
   text: {
     lineHeight: 20,
     fontSize: 20,
-    marginVertical: "1em",
+    marginVertical: 20,
     textAlign: "center",
   },
   link: {
